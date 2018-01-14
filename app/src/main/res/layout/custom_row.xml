@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="88dp">
+
+        <TextView
+            android:text="subject"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/subjectName"
+            android:layout_width="75dp" />
+
+        <TextView
+            android:text="precentage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/percentageText"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <GridLayout
+            android:layout_height="35dp"
+            android:layout_marginRight="19dp"
+            android:layout_marginEnd="19dp"
+            android:layout_below="@+id/subjectName"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="220dp"
+            android:id="@+id/gridLayout">
+
+            <Button
+                android:text="-"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonPresentMinus" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/presentCount"
+                android:background="#7fa87f"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:layout_gravity="center" />
+
+            <Button
+                android:text="+"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:id="@+id/buttonPresentPlus" />
+
+            <Button
+                android:text="-"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonAbsentMinus" />
+
+            <TextView
+                android:text="0"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/absentCount"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:foregroundGravity="center"
+                android:background="#66ff4081" />
+
+            <Button
+                android:text="+"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonAbsentPlus" />
+        </GridLayout>
+
+        <TextView
+            android:text="Hours"
+            android:layout_width="45dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:id="@+id/hoursText"
+            android:gravity="center"
+            android:layout_height="25dp" />
+
+        <TextView
+            android:text="Present"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="10dp"
+            android:id="@+id/presentText"
+            android:layout_marginLeft="175dp" />
+        <TextView
+            android:text="Absent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/absentText"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="65dp"
+            android:layout_toRightOf="@id/presentText"
+            />
+
+
+    </RelativeLayout>
+</LinearLayout>

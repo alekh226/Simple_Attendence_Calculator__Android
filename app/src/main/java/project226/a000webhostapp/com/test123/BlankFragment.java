@@ -21,7 +21,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
  */
 public class BlankFragment extends Fragment {
 
-    private GoogleMap mMap;
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {

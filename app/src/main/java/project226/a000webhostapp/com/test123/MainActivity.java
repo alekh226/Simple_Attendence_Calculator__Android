@@ -111,9 +111,9 @@ public class MainActivity extends AppCompatActivity
             B
             // Handle the camera action*/
 
-           /* BlankFragment blankFragment= new BlankFragment();
+            BlankFragment blankFragment= new BlankFragment();
             FragmentManager manager = getSupportFragmentManager();
-            manager.beginTransaction().replace(R.id.map,BlankFragment,BlankFragmen);*/
+            manager.beginTransaction().replace(R.id.map,blankFragment).commit();
         } else if (id == R.id.nav_gallery) {
 
         } else if (id == R.id.nav_slideshow) {

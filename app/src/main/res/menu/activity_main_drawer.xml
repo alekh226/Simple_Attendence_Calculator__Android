@@ -5,21 +5,28 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/PoliceStations"
+            android:icon="@drawable/noun_281794_cc"
+            android:title="PoliceStations" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="Gallery" />
+            android:id="@+id/Medicals"
+            android:icon="@drawable/ic_local_hospital_3x"
+            android:title="Medicals" />
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Slideshow" />
+            android:id="@+id/Ambulance"
+            android:icon="@drawable/ic_airport_shuttle_3x"
+            android:title="Ambulance Nearby" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Tools" />
+            android:id="@+id/Location"
+            android:icon="@drawable/ic_location_on_3x"
+            android:title="Location Sharing" />
+
+        <item
+            android:id="@+id/Crime"
+            android:icon="@drawable/crime"
+            android:title="Crime Details" />
+
+
     </group>
 
     <item android:title="Communicate">

@@ -15,6 +15,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -40,10 +41,10 @@ public class MainActivity extends AppCompatActivity
                 /*Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();*/
 
-                DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+                /*DrawerLayout drawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
 
 //To Open:
-                drawerLayout.openDrawer(Gravity.START);
+                drawerLayout.openDrawer(Gravity.START);*/
             }
         });
 
@@ -102,7 +103,7 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
+        if (id == R.id.PoliceStations) {
             /*setContentView(R.layout.activity_maps);
             // Obtain the SupportMapFragment and get notified when the map is ready to be used.
             SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
@@ -114,11 +115,15 @@ public class MainActivity extends AppCompatActivity
             BlankFragment blankFragment= new BlankFragment();
             FragmentManager manager = getSupportFragmentManager();
             manager.beginTransaction().replace(R.id.map,blankFragment).commit();
-        } else if (id == R.id.nav_gallery) {
+        } else if (id == R.id.Medicals) {
 
-        } else if (id == R.id.nav_slideshow) {
+            Toast.makeText(MainActivity.this,"gallery",Toast.LENGTH_SHORT).show();
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.Ambulance) {
+
+        } else if (id == R.id.Location) {
+
+        } else if (id == R.id.Crime) {
 
         } else if (id == R.id.nav_share) {
 
